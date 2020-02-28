@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200226115415_InitialCreate.cs" />
+    <Compile Remove="Migrations\20200226115415_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20200226120102_InitialCreate.cs" />
+    <Compile Remove="Migrations\20200226120102_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20200226121551_InitialCreate.cs" />
+    <Compile Remove="Migrations\20200226121551_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20200226122651_InitialCreate.cs" />
+    <Compile Remove="Migrations\20200226122651_InitialCreate.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\testef.models\testef.models.csproj" />
+  </ItemGroup>
+
+</Project>
