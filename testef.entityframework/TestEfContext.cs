@@ -13,7 +13,7 @@ namespace testef.entityframework
 
         //configure connection to localDb
         protected override void OnConfiguring(DbContextOptionsBuilder options)
-            => options.UseSqlServer("server=.;database=eftest;trusted_connection=true;");
+            => options.UseSqlServer("server=(localdb)\\MSSQLLocalDB;database=efTest;trusted_connection=true;");
         
         //configure table names that are not plural
         protected override void OnModelCreating(ModelBuilder modelBuilder)
